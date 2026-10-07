@@ -4,6 +4,8 @@
 
 Initial public release of Spotify Account Transfer (Unofficial).
 
+Shared as-is for personal use and forks, without an ongoing support or maintenance commitment.
+
 - Local-only browser interface with separate old/source and new/destination sign-ins.
 - OAuth PKCE with no Client Secret and no tokens stored on disk.
 - Library backup, additive copying, resumable journals and destination verification.

@@ -1,6 +1,6 @@
-# Contributing
+# Forking and development
 
-Open an issue describing the problem or proposed change before undertaking a large feature. Keep reports sanitized: never upload real backups, journals, tokens, Client Secrets, account emails or personal screenshots.
+This is an as-is personal project, not an actively maintained service. You are welcome to fork and improve it under the MIT license. The original author does not promise support, issue responses, pull-request reviews or updates. Keep shared examples sanitized: never upload real backups, journals, tokens, Client Secrets, account emails or personal screenshots.
 
 ## Local checks
 
@@ -18,4 +18,4 @@ Open an issue describing the problem or proposed change before undertaking a lar
 - Report partial results honestly; tests alone do not prove a complete live transfer.
 - Keep runtime dependencies at the Python standard library unless a change has a clear justification.
 
-Contributions are provided under the project's MIT license. Security concerns should use the private process in SECURITY.md.
+Retain the MIT license notice in redistributed versions. Read SECURITY.md before sharing logs or reporting a security concern.

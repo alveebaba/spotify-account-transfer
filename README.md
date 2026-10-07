@@ -7,6 +7,8 @@
 
 This is an **independent, unofficial personal utility**, not affiliated with or endorsed by Spotify. It is not a hosted service, music downloader, subscription transfer, or complete account clone. Spotify's access rules, quotas and regional availability still apply.
 
+**Status: shared as-is; not actively maintained.** This was built for a personal migration and published so others can use or fork it. No ongoing support, updates, security-response service, pull-request review or future Spotify compatibility is promised. You are welcome to maintain your own fork under the MIT license.
+
 ## Quick start
 
 Install [Python 3.10 or newer](https://www.python.org/downloads/). No Python packages, Node.js, Docker, cloud server or background Mac are needed to use the tool.
@@ -118,9 +120,9 @@ The browser test starts its own server on a random loopback port with temporary 
 
 Tests cover read-only source protection, PKCE, pagination, rate limits, interrupted writes, duplicate prevention, item order, destination identity, CSRF and responsive UI behavior. Live authorization and account-specific completeness still require real sign-in and a review of transfer results.
 
-## License and contributions
+## License and forks
 
-[MIT](LICENSE). Contributions and sanitized bug reports are welcome; see [CONTRIBUTING.md](CONTRIBUTING.md) and [SECURITY.md](SECURITY.md). Spotify names and marks belong to their respective owners. The software is provided without warranty; review results before changing or closing any account.
+[MIT](LICENSE). Anyone may use, modify and redistribute the code under that license. See [CONTRIBUTING.md](CONTRIBUTING.md) for fork development notes and [SECURITY.md](SECURITY.md) for security limitations. Spotify names and marks belong to their respective owners. The software is provided without warranty or a maintenance commitment; review results before changing or closing any account.
 
 ## API references
 

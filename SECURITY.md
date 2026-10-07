@@ -2,9 +2,9 @@
 
 This is a single-user, loopback-only desktop utility, not a multi-user web service. Do not expose it through a reverse proxy, public tunnel or forwarded port. Local files and browser sessions are trusted; the tool does not protect against malware or another person with access to your OS account.
 
-## Reporting a vulnerability
+## Support limitations
 
-Use this repository's **Security > Report a vulnerability** option for a private report. Do not put exploitable details, real account data, OAuth codes, access/refresh tokens, credentials or library backups into a public issue. Include a minimal reproduction using fake data.
+This repository is shared as-is and has no dedicated security support or response commitment. Do not assume an issue or message will receive a response. Do not put exploitable details, real account data, OAuth codes, access/refresh tokens, credentials or library backups into a public issue. Use fake data for any shared reproduction and assess the security of your own copy or fork before use.
 
 ## Credentials and data
 
@@ -15,4 +15,4 @@ Use this repository's **Security > Report a vulnerability** option for a private
 - Backups and journals contain private metadata and are not encrypted. Store them privately, preserve them for recovery and keep them out of public repositories and bug reports.
 - Stop the service after use. Removing the app under Spotify's account app-access settings revokes its authorization.
 
-Only the current release is maintained. Automated tests and these safeguards are not a formal security audit or a guarantee against every failure.
+This project is not actively maintained; no security updates are promised. Automated tests and these safeguards are not a formal security audit or a guarantee against every failure.
