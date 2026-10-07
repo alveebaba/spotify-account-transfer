@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Spotify Account Transfer</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body>
+<header><div class="wrap top"><div><span class="eyebrow">LOCAL LIBRARY TOOL</span><h1>Spotify Account Transfer</h1></div><span class="local">This PC only</span></div></header>
+<main class="wrap">
+<section id="setup"><div class="section-title"><h2>1. App connection</h2><a href="https://developer.spotify.com/dashboard" target="_blank" rel="noreferrer">Spotify developer dashboard</a></div>
+<div class="settings"><label for="client">Client ID</label><div class="input-row"><input id="client" maxlength="32" autocomplete="off" spellcheck="false" placeholder="32-character Client ID"><button id="save">Save</button></div><label for="redirect">Redirect URI</label><input id="redirect" readonly value="http://127.0.0.1:8787/callback"></div>
+</section>
+<section><div class="section-title"><h2>2. Accounts</h2><button id="disconnect" class="quiet">Disconnect accounts</button></div>
+<div class="accounts"><div class="account"><span class="eyebrow">OLD ACCOUNT / READ ONLY</span><h3 id="source-name">Not connected</h3><p class="account-id" id="source-id">&nbsp;</p><button id="connect-source">Connect old account</button></div><div class="account"><span class="eyebrow">NEW ACCOUNT / DESTINATION</span><h3 id="target-name">Not connected</h3><p class="account-id" id="target-id">&nbsp;</p><button id="connect-target">Connect new account</button></div></div>
+</section>
+<section><div class="section-title"><h2>3. Library backup</h2><div class="actions"><a id="download" href="/api/backup" download="spotify-library-backup.json" hidden>Download backup</a><button id="export">Back up old account</button></div></div><p id="empty" class="muted">No backup yet</p><div id="inventory" hidden><div id="counts" class="counts"></div><div class="table-wrap"><table><thead><tr><th>Playlist</th><th>Action</th><th>Items</th></tr></thead><tbody id="playlists"></tbody></table></div><ul id="warnings" class="warnings"></ul></div></section>
+<section><h2>4. Confirm destination</h2><label class="check"><input type="checkbox" id="public">Preserve public visibility of public playlists</label><label for="confirm">Destination account ID</label><div class="input-row"><input id="confirm" autocomplete="off" spellcheck="false" placeholder="Connect the new account first"><button id="transfer" class="primary">Copy / resume</button></div><p class="notice">Existing destination content stays in place. Original saved dates, listening history, recommendations, folders, local audio, downloads, covers and collaborators are not copied.</p></section>
+<section class="status"><div class="section-title"><h2>Transfer status</h2><button id="pause" hidden>Pause</button></div><p id="message" role="status" aria-live="polite">Connecting to local service...</p><p id="error" class="error" role="alert" hidden></p><div id="result" hidden></div></section>
+</main><footer class="wrap"><span>Unofficial personal migration tool</span><button id="shutdown" class="quiet">Stop local service</button></footer>
+</body></html>

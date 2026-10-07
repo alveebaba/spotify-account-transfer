@@ -1,0 +1,10 @@
+{
+  "name": "spotify-account-transfer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Development-only browser tests for the unofficial Spotify Account Transfer utility",
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "scripts": { "test:ui": "node test_ui.cjs" },
+  "devDependencies": { "playwright": "1.62.1" }
+}
